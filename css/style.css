@@ -47,7 +47,7 @@ img {
  margin-bottom: 50px;
 }
 
-@media screen and (max-width: 736px) {
+@media screen and (min-width: 736px) {
 
 img {
   width: 50%;
