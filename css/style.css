@@ -8,8 +8,8 @@
 
 
 img {
-    width: 50%;
-    height: 50%;
+    width: 400px;
+    height: 200px;
 }
 
 .card {
@@ -47,3 +47,11 @@ img {
  margin-bottom: 50px;
 }
 
+@media screen and (max-width: 736px) {
+
+img {
+  width: 20%;
+  height: 20%;
+}
+
+}
