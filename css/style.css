@@ -42,7 +42,7 @@ img {
   height: 50px;
 }
 
-.pageWrap {
+div#pageWrap {
  display: flex;
  justify-content: center;
  margin-left: 10%;
