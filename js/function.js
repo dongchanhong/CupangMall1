@@ -12,6 +12,7 @@ function buildFunctionPagination(filterdData) {
             });
 
             $("#d-container").html(dataHtml);
+            window.scrollTo(0,0);
         }        })
 }
 
@@ -61,6 +62,7 @@ function resetFunction() {
             });
 
             $("#d-container").html(dataHtml);
+            window.scrollTo(0,0);
         }
     })
   })

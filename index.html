@@ -150,13 +150,14 @@
 					pageSize :5,
 					callback: function (data, pagination) {
 						var dataHtml = '';
-		
+		 
 						$.each(data, function (index, item) {
 							dataHtml += '<div class ="card"><h6 class="font2"><a href=' + item.productUrl + '>"' +  item.productName +'</a></h6>'
 										+ '<img src=' + item.productImage + '><br><font size="5"> ' + item.productPrice +'원</font></div>'
 						});
 		
 						$("#d-container").html(dataHtml);
+						window.scrollTo(0,0);
 					}
 				})
 			})
