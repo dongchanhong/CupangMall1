@@ -45,8 +45,8 @@ img {
 div#pageWrap {
  display: flex;
  justify-content: center;
- margin-left: 10%;
- margin-bottom: 50px;
+ margin-top: 10px;
+ margin-bottom: 10px;
 }
 
 @media screen and (max-width: 736px) {
@@ -55,5 +55,9 @@ img {
   width: 70%;
   height: 40%;
 }
+
+div#pageWrap {
+  display: block;
+ }
 
 }
