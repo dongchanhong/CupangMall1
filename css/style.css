@@ -57,7 +57,10 @@ img {
 }
 
 div#pageWrap {
-  display: block;
+  display: flex;
+  justify-content: left;
+  margin-top: 2;
+  margin-bottom: 2px;
  }
 
 }
