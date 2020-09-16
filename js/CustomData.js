@@ -1,0 +1,3 @@
+var data1 = [
+{'title': '스위퍼 더스터 스타터 키트 + 먼지떨이 리필 10개입, 혼합 색상, 2세트', 'info': '집안 곳곳 먼지 흡착 더스터', 'price': '20,350원', 'url': 'https://coupa.ng/bJTow8', 'image': 'https://static.coupangcdn.com/image/affiliate/banner/75cbbfcefe17fef994568b4bab667c7c@2x.jpg', 'tag': '#집안 #더스터'},{'title': '[로켓프레시] 본앤브레드 한우 1++(9)등급 맡김차림 선물세트 (냉장), 2kg, 1세트', 'info': '마이스터의 자부심이 깃든 품격 있는 한우', 'price': '450,000원', 'url': 'https://coupa.ng/bJTp6y', 'image': 'https://static.coupangcdn.com/image/affiliate/banner/b7b9e6dfaad7bd2a531201e5015007b3@2x.jpg', 'tag': '#자부심 #마이스터 #한우'},
+]

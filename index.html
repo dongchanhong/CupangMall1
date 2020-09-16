@@ -29,6 +29,7 @@
 	<body class="is-preload">
 		<!-- data load -->
 		<script type="text/javascript" src="js/data.js"></script>
+		<script type="text/javascript" src="js/CustomData.js"></script>
 		<script type="text/javascript" src="js/function.js"></script>
 		
 
@@ -38,7 +39,8 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<a href="#" class="icon solid fa-home"><span>Home</span></a>
-						<a href="#work" class="icon solid fa-folder"><span>Eshop1</span></a>
+						<a href="#work1" class="icon solid fa-folder"><span>Eshop1 Best상품</span></a>
+						<a href="#work2" class="icon solid fa-folder"><span>Eshop2 추천상품</span></a>
 						<a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
 						<a href="https://plentyplan.modoo.at/" class="icon solid fa-link" target="_blank"><span>Ours</span></a>
 					</nav>
@@ -61,7 +63,7 @@
 
 						
 							<!-- Work1-->
-							<article id="work" class="panel">
+							<article id="work1" class="panel">
 								<header>
 									<h2 class="font1">Product-여성패션</h2>
 								</header>
@@ -93,6 +95,42 @@
 									 <button onclick="resetFunction(data)" style="margin-left: 5px;">검색초기화</button>
 									</div>
 								
+							</article>
+
+
+							<!-- Work2-->
+								<article id="work2" class="panel">
+									<header>
+										<h2 class="font1">추천상품</h2>
+									</header>
+									<p>
+										쿠팡파트너스 엄선한 추천상품입니다.<br>
+										<font size="2">이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받고 있습니다. </font>
+									</p>
+									
+										<div class="container" id="container">
+											<div class="list-wrapper">
+												<div class="list-item" id="list-item">
+									
+												</div>
+											</div>
+										</div>
+									   
+										<div>
+											<section id="cen">
+												<div id="d-container1"></div>
+												<div id="pageWrap">
+													<div id="pagination1"></div>
+												</div>
+											</section>
+										</div>
+									
+										<div>
+										 <input id="search-input" class="form-control" type="text">
+										 <button onclick="filterFunction(data)" style="margin-left: 5px;">검색</button>
+										 <button onclick="resetFunction(data)" style="margin-left: 5px;">검색초기화</button>
+										</div>
+									
 							</article>
 
 
@@ -142,7 +180,7 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
-		<!-- Scripts -->
+		<!-- Scripts work1-->
 		<script>
 
 			$(function () {
@@ -170,6 +208,37 @@
 			})
 		</script>
 
+
+        <!-- Scripts work2-->
+		<script>
+
+			$(function () {
+				let container = $('#pagination1');
+				container.pagination({
+					dataSource: data1,
+					pageSize :5,
+					callback: function (data1, pagination) {
+						var dataHtml = '';
+		 
+						$.each(data1, function (index, item) {
+							dataHtml += '<div class ="card"><h6 class="font2"><a href=' + item.url + '>"' +  item.title +'</a></h6>'
+										+ '<img src=' + item.image + '><br><font size="5"> ' + item.info +'</font>'							
+										+ '<br><font size="5">' + item.price + '</font>'
+										+ '<br><font size="5">' + item.tag + '</font></div>'
+										
+						});
+		
+						$("#d-container1").html(dataHtml);
+						window.scrollTo(0,0);
+					}
+				})
+			})
+	
+			$('#search-input').on('keyup', function() {
+			 var value=$(this).val()
+			console.log('Value:',value)
+			})
+		</script>
 
 
 	</body>
