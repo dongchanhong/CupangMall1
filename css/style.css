@@ -13,12 +13,12 @@
 }
 
 
-.figure.image1.img {
+div#card img {
     width: 70%;
     height: 40%;
 }
 
-.figure.image2.img {
+div#card1 img {
   width: 30%;
   height: 30%;
 }
@@ -69,7 +69,7 @@ div#pageWrap {
 
 @media screen and (max-width: 736px) {
 
-.figure.image1.img {
+div#card img {
   width: 70%;
   height: 40%;
 }

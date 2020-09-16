@@ -7,8 +7,8 @@ function buildFunctionPagination(filterdData) {
             var dataHtml = '';
 
             $.each(data, function (index, item) {
-                dataHtml += '<div class ="card"><figure class="image1"><h6 class="font2"><a href=' + item.productUrl + '>"' +  item.productName +'</a></h6>'
-                + '<img src=' + item.productImage + '><br><font size="5"> ' + item.productPrice +'원</font></figure></div>'
+                dataHtml += '<div class ="card"><h6 class="font2"><a href=' + item.productUrl + '>"' +  item.productName +'</a></h6>'
+                + '<img src=' + item.productImage + '><br><font size="5"> ' + item.productPrice +'원</font></div>'
             });
 
             $("#d-container").html(dataHtml);
@@ -57,8 +57,8 @@ function resetFunction() {
             var dataHtml = '';
 
             $.each(data, function (index, item) {
-                dataHtml += '<div class ="card"><figure class="image1"><h6 class="font2"><a href=' + item.productUrl + '>"' +  item.productName +'</a></h6>'
-                + '<img src=' + item.productImage + '><br><font size="5"> ' + item.productPrice +'원</font></figure></div>'
+                dataHtml += '<div class ="card"><h6 class="font2"><a href=' + item.productUrl + '>"' +  item.productName +'</a></h6>'
+                + '<img src=' + item.productImage + '><br><font size="5"> ' + item.productPrice +'원</font></div>'
             });
 
             $("#d-container").html(dataHtml);
