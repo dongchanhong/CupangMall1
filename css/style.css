@@ -13,12 +13,12 @@
 }
 
 
-.image1 {
+figure#image1 {
     width: 70%;
     height: 40%;
 }
 
-.image2 {
+figure#image2 {
   width: 30%;
   height: 30%;
 }
@@ -69,7 +69,7 @@ div#pageWrap {
 
 @media screen and (max-width: 736px) {
 
-.image1 {
+figure#image1 {
   width: 70%;
   height: 40%;
 }
