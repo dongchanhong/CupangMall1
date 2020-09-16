@@ -13,12 +13,24 @@
 }
 
 
-img {
+.image1 {
     width: 70%;
     height: 40%;
 }
 
+.image2 {
+  width: 30%;
+  height: 30%;
+}
+
 .card {
+  box-shadow: 10px 10px 5px 0px rgba(238, 238, 238, 1);
+  margin: 15px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.card1 {
   box-shadow: 10px 10px 5px 0px rgba(238, 238, 238, 1);
   margin: 15px;
   text-align: center;
@@ -57,7 +69,7 @@ div#pageWrap {
 
 @media screen and (max-width: 736px) {
 
-img {
+.image1 {
   width: 70%;
   height: 40%;
 }
