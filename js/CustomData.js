@@ -1,3 +1,3 @@
-var data = [
+var data1 = [
 {'title': '뉴발란스 운동화 ML615NRT', 'info': '그냥 뉴발란스 운동화', 'price': '39,800원', 'url': 'https://coupa.ng/bJTzyr', 'image': 'https://static.coupangcdn.com/image/affiliate/banner/e5ccc61eefe7f9903cd8a906b4d66af3@2x.jpg', 'tag': '뉴발 운동화'},{'title': '뉴발란스 운동화 ML615NRT', 'info': '그냥 뉴발란스 운동화', 'price': '39,800원', 'url': 'https://coupa.ng/bJTzyr', 'image': 'https://static.coupangcdn.com/image/affiliate/banner/e5ccc61eefe7f9903cd8a906b4d66af3@2x.jpg', 'tag': '뉴발 운동화'},
 ]
