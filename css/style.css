@@ -13,12 +13,12 @@
 }
 
 
-div#card.img {
+div.card img {
     width: 70%;
     height: 40%;
 }
 
-div#card1.img {
+div.card1 img {
   width: 30%;
   height: 30%;
 }
@@ -69,7 +69,7 @@ div#pageWrap {
 
 @media screen and (max-width: 736px) {
 
-div#card img {
+div.card img {
   width: 70%;
   height: 40%;
 }
